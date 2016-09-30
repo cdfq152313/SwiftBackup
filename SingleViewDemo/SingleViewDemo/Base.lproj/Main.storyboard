@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ljk-b3-lCa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="pW3-Ic-Dwn">
+            <objects>
+                <viewController id="ljk-b3-lCa" customClass="LoginViewController" customModule="Banana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CMq-tV-2vV"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGW-W9-3YP"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.5" contentMode="scaleAspectFill" id="Wnu-cF-Y2w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LoginCover" translatesAutoresizingMaskIntoConstraints="NO" id="NGg-DR-RY5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="634.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NGg-DR-RY5" secondAttribute="height" multiplier="16:9" id="hsk-sd-wgV"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-AC-LWw">
+                                <rect key="frame" x="20" y="377" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="co3-MR-cj6">
+                                <rect key="frame" x="20" y="428" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-xT-FZk">
+                                <rect key="frame" x="20" y="466" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signIn:" destination="ljk-b3-lCa" eventType="touchUpInside" id="yli-3W-6wO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YoU-xT-FZk" firstAttribute="trailing" secondItem="co3-MR-cj6" secondAttribute="trailing" id="02D-4H-MR3"/>
+                            <constraint firstItem="co3-MR-cj6" firstAttribute="leading" secondItem="hNe-AC-LWw" secondAttribute="leading" id="AIR-Rx-jP9"/>
+                            <constraint firstItem="YoU-xT-FZk" firstAttribute="top" secondItem="co3-MR-cj6" secondAttribute="bottom" constant="8" id="BrF-Uf-zIr"/>
+                            <constraint firstItem="hNe-AC-LWw" firstAttribute="leading" secondItem="Wnu-cF-Y2w" secondAttribute="leading" constant="20" id="CVr-W4-MWC"/>
+                            <constraint firstItem="NGg-DR-RY5" firstAttribute="leading" secondItem="Wnu-cF-Y2w" secondAttribute="leading" id="HzR-cv-bHF"/>
+                            <constraint firstAttribute="trailing" secondItem="NGg-DR-RY5" secondAttribute="trailing" id="SEY-QH-5gt"/>
+                            <constraint firstItem="co3-MR-cj6" firstAttribute="top" secondItem="hNe-AC-LWw" secondAttribute="bottom" constant="21" id="XLG-de-ffG"/>
+                            <constraint firstItem="co3-MR-cj6" firstAttribute="trailing" secondItem="hNe-AC-LWw" secondAttribute="trailing" id="cC1-wT-ai0"/>
+                            <constraint firstItem="hNe-AC-LWw" firstAttribute="top" secondItem="NGg-DR-RY5" secondAttribute="bottom" constant="40" id="fCa-D7-O6I"/>
+                            <constraint firstAttribute="trailing" secondItem="hNe-AC-LWw" secondAttribute="trailing" constant="20" id="hsp-Ok-x7W"/>
+                            <constraint firstItem="NGg-DR-RY5" firstAttribute="top" secondItem="Wnu-cF-Y2w" secondAttribute="top" id="jSN-qL-m5s"/>
+                            <constraint firstItem="YoU-xT-FZk" firstAttribute="leading" secondItem="co3-MR-cj6" secondAttribute="leading" id="srE-Ng-ieS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="co3-MR-cj6" id="1MT-Gj-OaQ"/>
+                        <outlet property="usernameTextField" destination="hNe-AC-LWw" id="C92-4G-0C6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKW-Ro-qAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Banana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginCover" width="1069" height="379"/>
+    </resources>
+</document>
