@@ -29,7 +29,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchWord = searchController.searchBar.text{
-            resultArray = appleProduct.filter{ $0.contains(searchWord) }
+            resultArray = appleProduct.filter{ $0.lowercased().contains(searchWord.lowercased()) }
         }
         resultController.tableView.reloadData()
     }

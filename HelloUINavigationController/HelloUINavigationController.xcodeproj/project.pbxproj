@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0423CC51DA22FEE00D62F1E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0423CC41DA22FEE00D62F1E /* ThirdViewController.swift */; };
+		B0423CC71DA23EAF00D62F1E /* SecondStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0423CC61DA23EAF00D62F1E /* SecondStoryBoard.storyboard */; };
 		B0ABC09D1D9E1EE700AE66AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ABC09C1D9E1EE700AE66AC /* AppDelegate.swift */; };
 		B0ABC09F1D9E1EE700AE66AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ABC09E1D9E1EE700AE66AC /* ViewController.swift */; };
 		B0ABC0A21D9E1EE700AE66AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0ABC0A01D9E1EE700AE66AC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0423CC41DA22FEE00D62F1E /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B0423CC61DA23EAF00D62F1E /* SecondStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondStoryBoard.storyboard; sourceTree = "<group>"; };
 		B0ABC0991D9E1EE700AE66AC /* HelloUINavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloUINavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0ABC09C1D9E1EE700AE66AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0ABC09E1D9E1EE700AE66AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				B0ABC0A31D9E1EE700AE66AC /* Assets.xcassets */,
 				B0ABC0A51D9E1EE700AE66AC /* LaunchScreen.storyboard */,
 				B0ABC0A81D9E1EE700AE66AC /* Info.plist */,
+				B0423CC41DA22FEE00D62F1E /* ThirdViewController.swift */,
+				B0423CC61DA23EAF00D62F1E /* SecondStoryBoard.storyboard */,
 			);
 			path = HelloUINavigationController;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				B0ABC0A71D9E1EE700AE66AC /* LaunchScreen.storyboard in Resources */,
 				B0ABC0A41D9E1EE700AE66AC /* Assets.xcassets in Resources */,
 				B0ABC0A21D9E1EE700AE66AC /* Main.storyboard in Resources */,
+				B0423CC71DA23EAF00D62F1E /* SecondStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0ABC09F1D9E1EE700AE66AC /* ViewController.swift in Sources */,
+				B0423CC51DA22FEE00D62F1E /* ThirdViewController.swift in Sources */,
 				B0ABC09D1D9E1EE700AE66AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +511,7 @@
 				B0ABC0C31D9E1EE700AE66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0ABC0C41D9E1EE700AE66AC /* Build configuration list for PBXNativeTarget "HelloUINavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				B0ABC0C61D9E1EE700AE66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0ABC0C71D9E1EE700AE66AC /* Build configuration list for PBXNativeTarget "HelloUINavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				B0ABC0C91D9E1EE700AE66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

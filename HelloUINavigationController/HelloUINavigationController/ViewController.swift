@@ -19,7 +19,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func gotoView(_ sender: UIBarButtonItem) {
+        let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let whiteViewController = myStoryBoard.instantiateViewController(withIdentifier: "whiteView")
+        present(whiteViewController, animated:true, completion:nil)
+    }
 
 }
 
+class SecondViewController : UIViewController{
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBAction func goBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        myLabel.text = "Hello"
+    }
+}
