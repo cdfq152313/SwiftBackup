@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HelloPassingValue
+//  HelloUIDatePicker
 //
-//  Created by denny on 10/3/16.
+//  Created by denny on 10/5/16.
 //  Copyright © 2016 denny. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var color: String?
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

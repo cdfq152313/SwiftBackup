@@ -33,6 +33,14 @@
                                     <action selector="gotoView2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ou-Jp-pZ2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp6-Ya-TFw">
+                                <frame key="frameInset" minX="180" minY="478" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go2"/>
+                                <connections>
+                                    <segue destination="f6D-vI-JXC" kind="show" id="QDt-ZD-evg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -53,6 +61,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Third View-->
+        <scene sceneID="N4F-a9-vVZ">
+            <objects>
+                <viewController id="f6D-vI-JXC" customClass="ThirdViewController" customModule="HelloPassingValue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1P-Db-3NJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="J0s-gj-33P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BXE-R7-Hh5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third View" id="wud-ju-GZD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOV-Jh-OsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="840"/>
         </scene>
         <!--Second View-->
         <scene sceneID="r1C-eb-Rqf">
@@ -89,6 +116,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-Uq-o7Y">
+                                <frame key="frameInset" minX="166" minY="258" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back2"/>
+                                <connections>
+                                    <segue destination="74a-1B-oFm" kind="unwind" unwindAction="backToMain:" id="Ln8-UV-nJW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -109,8 +144,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8j9-kx-Bnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="74a-1B-oFm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="139"/>
+            <point key="canvasLocation" x="1894" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qwk-k8-7Zg">

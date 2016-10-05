@@ -8,17 +8,36 @@
 
 import UIKit
 
+protocol SecondViewControllerDelegate{
+    func setColor(colorType:String)
+}
+
 class SecondViewController : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     @IBOutlet weak var myLabel: UILabel!
     
     @IBOutlet weak var myPickerView: UIPickerView!
     
+    
+    
+
+    
+    let colorArray = ["red", "green", "blue", "noAction"]
+    var textFromFirstView:String?
+    var chooseColor = ""
+    
+    var delegate:SecondViewControllerDelegate?
     @IBAction func goBack(_ sender: UIButton) {
-        
+        let _ = navigationController?.popViewController(animated: true)
     }
     
-    let colorArray = ["red", "green", "blue"]
-    var textFromFirstView:String?
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParentViewController{
+            let i = myPickerView.selectedRow(inComponent: 0)
+            let chooseColor = colorArray[i]
+            delegate?.setColor(colorType: chooseColor)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +58,10 @@ class SecondViewController : UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return colorArray[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        chooseColor = colorArray[row]
     }
     
 }
