@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B03E7E651DA63C7000E0AB79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03E7E641DA63C7000E0AB79 /* AppDelegate.swift */; };
+		B03E7E671DA63C7000E0AB79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03E7E661DA63C7000E0AB79 /* ViewController.swift */; };
+		B03E7E6A1DA63C7000E0AB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03E7E681DA63C7000E0AB79 /* Main.storyboard */; };
+		B03E7E6C1DA63C7000E0AB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03E7E6B1DA63C7000E0AB79 /* Assets.xcassets */; };
+		B03E7E6F1DA63C7000E0AB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03E7E6D1DA63C7000E0AB79 /* LaunchScreen.storyboard */; };
+		B03E7E7A1DA63C7000E0AB79 /* HelloRecordAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03E7E791DA63C7000E0AB79 /* HelloRecordAudioTests.swift */; };
+		B03E7E851DA63C7000E0AB79 /* HelloRecordAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03E7E841DA63C7000E0AB79 /* HelloRecordAudioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B03E7E761DA63C7000E0AB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03E7E591DA63C7000E0AB79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B03E7E601DA63C7000E0AB79;
+			remoteInfo = HelloRecordAudio;
+		};
+		B03E7E811DA63C7000E0AB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03E7E591DA63C7000E0AB79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B03E7E601DA63C7000E0AB79;
+			remoteInfo = HelloRecordAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B03E7E611DA63C7000E0AB79 /* HelloRecordAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloRecordAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03E7E641DA63C7000E0AB79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B03E7E661DA63C7000E0AB79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B03E7E691DA63C7000E0AB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B03E7E6B1DA63C7000E0AB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B03E7E6E1DA63C7000E0AB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B03E7E701DA63C7000E0AB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03E7E751DA63C7000E0AB79 /* HelloRecordAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloRecordAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03E7E791DA63C7000E0AB79 /* HelloRecordAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRecordAudioTests.swift; sourceTree = "<group>"; };
+		B03E7E7B1DA63C7000E0AB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03E7E801DA63C7000E0AB79 /* HelloRecordAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloRecordAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03E7E841DA63C7000E0AB79 /* HelloRecordAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRecordAudioUITests.swift; sourceTree = "<group>"; };
+		B03E7E861DA63C7000E0AB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B03E7E5E1DA63C7000E0AB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E721DA63C7000E0AB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E7D1DA63C7000E0AB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B03E7E581DA63C7000E0AB79 = {
+			isa = PBXGroup;
+			children = (
+				B03E7E631DA63C7000E0AB79 /* HelloRecordAudio */,
+				B03E7E781DA63C7000E0AB79 /* HelloRecordAudioTests */,
+				B03E7E831DA63C7000E0AB79 /* HelloRecordAudioUITests */,
+				B03E7E621DA63C7000E0AB79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B03E7E621DA63C7000E0AB79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B03E7E611DA63C7000E0AB79 /* HelloRecordAudio.app */,
+				B03E7E751DA63C7000E0AB79 /* HelloRecordAudioTests.xctest */,
+				B03E7E801DA63C7000E0AB79 /* HelloRecordAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B03E7E631DA63C7000E0AB79 /* HelloRecordAudio */ = {
+			isa = PBXGroup;
+			children = (
+				B03E7E641DA63C7000E0AB79 /* AppDelegate.swift */,
+				B03E7E661DA63C7000E0AB79 /* ViewController.swift */,
+				B03E7E681DA63C7000E0AB79 /* Main.storyboard */,
+				B03E7E6B1DA63C7000E0AB79 /* Assets.xcassets */,
+				B03E7E6D1DA63C7000E0AB79 /* LaunchScreen.storyboard */,
+				B03E7E701DA63C7000E0AB79 /* Info.plist */,
+			);
+			path = HelloRecordAudio;
+			sourceTree = "<group>";
+		};
+		B03E7E781DA63C7000E0AB79 /* HelloRecordAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				B03E7E791DA63C7000E0AB79 /* HelloRecordAudioTests.swift */,
+				B03E7E7B1DA63C7000E0AB79 /* Info.plist */,
+			);
+			path = HelloRecordAudioTests;
+			sourceTree = "<group>";
+		};
+		B03E7E831DA63C7000E0AB79 /* HelloRecordAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B03E7E841DA63C7000E0AB79 /* HelloRecordAudioUITests.swift */,
+				B03E7E861DA63C7000E0AB79 /* Info.plist */,
+			);
+			path = HelloRecordAudioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B03E7E601DA63C7000E0AB79 /* HelloRecordAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03E7E891DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudio" */;
+			buildPhases = (
+				B03E7E5D1DA63C7000E0AB79 /* Sources */,
+				B03E7E5E1DA63C7000E0AB79 /* Frameworks */,
+				B03E7E5F1DA63C7000E0AB79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloRecordAudio;
+			productName = HelloRecordAudio;
+			productReference = B03E7E611DA63C7000E0AB79 /* HelloRecordAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B03E7E741DA63C7000E0AB79 /* HelloRecordAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03E7E8C1DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudioTests" */;
+			buildPhases = (
+				B03E7E711DA63C7000E0AB79 /* Sources */,
+				B03E7E721DA63C7000E0AB79 /* Frameworks */,
+				B03E7E731DA63C7000E0AB79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B03E7E771DA63C7000E0AB79 /* PBXTargetDependency */,
+			);
+			name = HelloRecordAudioTests;
+			productName = HelloRecordAudioTests;
+			productReference = B03E7E751DA63C7000E0AB79 /* HelloRecordAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B03E7E7F1DA63C7000E0AB79 /* HelloRecordAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03E7E8F1DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudioUITests" */;
+			buildPhases = (
+				B03E7E7C1DA63C7000E0AB79 /* Sources */,
+				B03E7E7D1DA63C7000E0AB79 /* Frameworks */,
+				B03E7E7E1DA63C7000E0AB79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B03E7E821DA63C7000E0AB79 /* PBXTargetDependency */,
+			);
+			name = HelloRecordAudioUITests;
+			productName = HelloRecordAudioUITests;
+			productReference = B03E7E801DA63C7000E0AB79 /* HelloRecordAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B03E7E591DA63C7000E0AB79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = denny;
+				TargetAttributes = {
+					B03E7E601DA63C7000E0AB79 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					B03E7E741DA63C7000E0AB79 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B03E7E601DA63C7000E0AB79;
+					};
+					B03E7E7F1DA63C7000E0AB79 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B03E7E601DA63C7000E0AB79;
+					};
+				};
+			};
+			buildConfigurationList = B03E7E5C1DA63C7000E0AB79 /* Build configuration list for PBXProject "HelloRecordAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B03E7E581DA63C7000E0AB79;
+			productRefGroup = B03E7E621DA63C7000E0AB79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B03E7E601DA63C7000E0AB79 /* HelloRecordAudio */,
+				B03E7E741DA63C7000E0AB79 /* HelloRecordAudioTests */,
+				B03E7E7F1DA63C7000E0AB79 /* HelloRecordAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B03E7E5F1DA63C7000E0AB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03E7E6F1DA63C7000E0AB79 /* LaunchScreen.storyboard in Resources */,
+				B03E7E6C1DA63C7000E0AB79 /* Assets.xcassets in Resources */,
+				B03E7E6A1DA63C7000E0AB79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E731DA63C7000E0AB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E7E1DA63C7000E0AB79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B03E7E5D1DA63C7000E0AB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03E7E671DA63C7000E0AB79 /* ViewController.swift in Sources */,
+				B03E7E651DA63C7000E0AB79 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E711DA63C7000E0AB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03E7E7A1DA63C7000E0AB79 /* HelloRecordAudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03E7E7C1DA63C7000E0AB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03E7E851DA63C7000E0AB79 /* HelloRecordAudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B03E7E771DA63C7000E0AB79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B03E7E601DA63C7000E0AB79 /* HelloRecordAudio */;
+			targetProxy = B03E7E761DA63C7000E0AB79 /* PBXContainerItemProxy */;
+		};
+		B03E7E821DA63C7000E0AB79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B03E7E601DA63C7000E0AB79 /* HelloRecordAudio */;
+			targetProxy = B03E7E811DA63C7000E0AB79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B03E7E681DA63C7000E0AB79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B03E7E691DA63C7000E0AB79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B03E7E6D1DA63C7000E0AB79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B03E7E6E1DA63C7000E0AB79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B03E7E871DA63C7000E0AB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B03E7E881DA63C7000E0AB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B03E7E8A1DA63C7000E0AB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloRecordAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B03E7E8B1DA63C7000E0AB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloRecordAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B03E7E8D1DA63C7000E0AB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloRecordAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloRecordAudio.app/HelloRecordAudio";
+			};
+			name = Debug;
+		};
+		B03E7E8E1DA63C7000E0AB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloRecordAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloRecordAudio.app/HelloRecordAudio";
+			};
+			name = Release;
+		};
+		B03E7E901DA63C7000E0AB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HelloRecordAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HelloRecordAudio;
+			};
+			name = Debug;
+		};
+		B03E7E911DA63C7000E0AB79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HelloRecordAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloRecordAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HelloRecordAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B03E7E5C1DA63C7000E0AB79 /* Build configuration list for PBXProject "HelloRecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03E7E871DA63C7000E0AB79 /* Debug */,
+				B03E7E881DA63C7000E0AB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B03E7E891DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03E7E8A1DA63C7000E0AB79 /* Debug */,
+				B03E7E8B1DA63C7000E0AB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B03E7E8C1DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03E7E8D1DA63C7000E0AB79 /* Debug */,
+				B03E7E8E1DA63C7000E0AB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B03E7E8F1DA63C7000E0AB79 /* Build configuration list for PBXNativeTarget "HelloRecordAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03E7E901DA63C7000E0AB79 /* Debug */,
+				B03E7E911DA63C7000E0AB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B03E7E591DA63C7000E0AB79 /* Project object */;
+}
