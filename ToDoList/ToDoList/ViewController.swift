@@ -10,19 +10,52 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var toDoArray = ["apple", "banana", "mango"]
+    var todoArray = ["apple", "banana", "mango"]
     
     @IBOutlet weak var tableView: UITableView!
+    
+    func loadTodo(){
+        let todoArray = UserDefaults.standard.stringArray(forKey: "todo")
+        if todoArray != nil{
+            self.todoArray = todoArray!
+            self.tableView.reloadData()
+        }
+    }
     
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         askInfoWithDefault(nil) {
             (success, toDo) in
             if success == true{
                 if let okToDo = toDo{
-                    self.toDoArray.append(okToDo)
+                    self.todoArray.append(okToDo)
                     self.tableView.reloadData()
+                    UserDefaults.standard.set(self.todoArray, forKey:"todo")
+                    UserDefaults.standard.synchronize()
                 }
             }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let thisToDo = todoArray[indexPath.row]
+        askInfoWithDefault(thisToDo) { (success, toDo) in
+            if success == true{
+                if let okTodo = toDo{
+                    self.todoArray[indexPath.row] = okTodo
+                    self.tableView.reloadData()
+                    UserDefaults.standard.set(self.todoArray, forKey:"todo")
+                    UserDefaults.standard.synchronize()
+                }
+            }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            todoArray.remove(at: indexPath.row)
+            tableView.reloadData()
+            UserDefaults.standard.set(self.todoArray, forKey:"todo")
+            UserDefaults.standard.synchronize()
         }
     }
     
@@ -32,6 +65,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             (textfield:UITextField) in
             textfield.placeholder = "Add New Task'"
             textfield.text = defaultToDo
+            
         }
         
         let ok = UIAlertAction(title: "OK", style: .default){
@@ -45,7 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
         
-        let cancel = UIAlertAction(title:"Cancel", style: .cancel, handler: nil)
+        let cancel = UIAlertAction(title:"Cancel", style: .default, handler: nil)
         
         myAlert.addAction(ok)
         myAlert.addAction(cancel)
@@ -58,6 +92,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
+        loadTodo()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -65,12 +100,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoArray.count
+        return todoArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell")!;
-        cell.textLabel?.text = toDoArray[indexPath.row]
+        cell.textLabel?.text = todoArray[indexPath.row]
         return cell
     }
 
