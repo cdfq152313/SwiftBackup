@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloFileSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUB-4Y-PNf">
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sy6-lw-S1A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpv-Zt-MkC">
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="load:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJD-bj-bs1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-aY-JGR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="GOp-EZ-cQS"/>
+                                    <constraint firstAttribute="width" constant="294" id="LJs-lb-kYD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cpv-Zt-MkC" firstAttribute="leading" secondItem="HUB-4Y-PNf" secondAttribute="trailing" constant="50" id="DQq-fN-wqT"/>
+                            <constraint firstItem="cpv-Zt-MkC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="Fq2-ni-I7V"/>
+                            <constraint firstItem="cpv-Zt-MkC" firstAttribute="width" secondItem="HUB-4Y-PNf" secondAttribute="width" id="IDW-cA-P8b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HUB-4Y-PNf" secondAttribute="bottom" constant="20" id="JE8-J4-x9M"/>
+                            <constraint firstItem="nUg-aY-JGR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KDS-Id-grS"/>
+                            <constraint firstItem="nUg-aY-JGR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YxM-TB-G2a"/>
+                            <constraint firstItem="HUB-4Y-PNf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="pdj-YX-6Pi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cpv-Zt-MkC" secondAttribute="bottom" constant="20" id="qj1-Yj-BDB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="nUg-aY-JGR" id="nSx-y5-77D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+</document>
