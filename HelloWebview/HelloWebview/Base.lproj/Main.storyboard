@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JGA-lb-uNL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UIWebView-->
+        <scene sceneID="1Qs-OO-ti2">
+            <objects>
+                <viewController id="gdI-Li-1mm" customClass="ViewController" customModule="HelloWebview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qTG-np-Rc5"/>
+                        <viewControllerLayoutGuide type="bottom" id="zTJ-41-IAS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdE-wC-qCE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HG-Og-4jm">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-7G-xk7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="1GQ-l1-iwd"/>
+                                    <constraint firstAttribute="height" constant="20" id="l6B-QO-E4u"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8HG-Og-4jm" firstAttribute="leading" secondItem="cdE-wC-qCE" secondAttribute="leading" id="7uv-BO-AX1"/>
+                            <constraint firstItem="Q5K-7G-xk7" firstAttribute="centerX" secondItem="cdE-wC-qCE" secondAttribute="centerX" id="Gy8-sS-XjU"/>
+                            <constraint firstItem="Q5K-7G-xk7" firstAttribute="centerY" secondItem="cdE-wC-qCE" secondAttribute="centerY" id="LKy-n0-nSl"/>
+                            <constraint firstAttribute="trailing" secondItem="8HG-Og-4jm" secondAttribute="trailing" id="ODp-nA-WJf"/>
+                            <constraint firstItem="8HG-Og-4jm" firstAttribute="top" secondItem="cdE-wC-qCE" secondAttribute="topMargin" id="Wlw-Hu-fHc"/>
+                            <constraint firstItem="8HG-Og-4jm" firstAttribute="bottom" secondItem="cdE-wC-qCE" secondAttribute="bottomMargin" id="YUU-7J-XJh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIWebView" id="iko-sl-JAn">
+                        <barButtonItem key="rightBarButtonItem" title="Safari" id="LJB-ej-17w">
+                            <connections>
+                                <action selector="useSafariApp:" destination="gdI-Li-1mm" id="oug-VT-3kk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myActivityIndicator" destination="Q5K-7G-xk7" id="Cge-WU-iyg"/>
+                        <outlet property="oldWebView" destination="8HG-Og-4jm" id="5Ty-ZD-qBn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yP0-J7-SwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="559.97001499250382"/>
+        </scene>
+        <!--MKWebView-->
+        <scene sceneID="TtT-hx-LJB">
+            <objects>
+                <viewController id="pty-mu-f3p" customClass="NewViewController" customModule="HelloWebview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RFX-zo-I19"/>
+                        <viewControllerLayoutGuide type="bottom" id="z8R-Ih-sLI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dWd-Av-NYt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MKWebView" id="kcp-uQ-Qzg">
+                        <barButtonItem key="rightBarButtonItem" title="SFController" id="SiA-TD-txY">
+                            <connections>
+                                <action selector="useSFController:" destination="pty-mu-f3p" id="ah1-pe-Lr8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0M-eO-KQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="-94.002998500749626"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hIJ-w1-87B">
+            <objects>
+                <tabBarController id="JGA-lb-uNL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LoV-ia-1en">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OUq-u2-rOx" kind="relationship" relationship="viewControllers" id="46o-OI-WrA"/>
+                        <segue destination="qjY-dg-wjt" kind="relationship" relationship="viewControllers" id="o3h-ui-D1g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYm-Pb-Jsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="233"/>
+        </scene>
+        <!--MKWebView-->
+        <scene sceneID="h4x-xz-rkq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUq-u2-rOx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MKWebView" image="MKWebViewIcon" id="HnD-ov-y0y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lL6-fj-kcz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pty-mu-f3p" kind="relationship" relationship="rootViewController" id="se7-Ie-22M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8F-W0-Oy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="-94.002998500749626"/>
+        </scene>
+        <!--UIWebView-->
+        <scene sceneID="7lQ-6e-z1I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qjY-dg-wjt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UIWebView" image="UIWebViewIcon" id="1B8-ZO-hGV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BdV-0x-N9P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gdI-Li-1mm" kind="relationship" relationship="rootViewController" id="uDF-PT-9RD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etd-c4-RY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="559.97001499250382"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MKWebViewIcon" width="30" height="30"/>
+        <image name="UIWebViewIcon" width="30" height="30"/>
+    </resources>
+</document>
