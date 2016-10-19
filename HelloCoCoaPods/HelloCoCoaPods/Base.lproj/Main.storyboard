@@ -36,15 +36,31 @@
                                     <action selector="loadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcw-i6-FnR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIm-xA-eCh">
+                                <frame key="frameInset" minX="17" minY="20" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FB Profile"/>
+                                <connections>
+                                    <action selector="facebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SxG-Q7-Z4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBv-wj-AXi">
+                                <frame key="frameInset" minX="127" minY="20" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FB Save"/>
+                                <connections>
+                                    <action selector="fbsaveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geu-iM-y1b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DVK-Pl-ikj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Qs-WC-0Vw"/>
                             <constraint firstItem="Nbz-c9-vB5" firstAttribute="width" secondItem="a4T-95-IFc" secondAttribute="width" id="TL6-ih-4ek"/>
-                            <constraint firstItem="DVK-Pl-ikj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tfn-2j-dku"/>
                             <constraint firstItem="Nbz-c9-vB5" firstAttribute="top" secondItem="DVK-Pl-ikj" secondAttribute="bottom" constant="30" id="UvT-gr-CyT"/>
                             <constraint firstItem="a4T-95-IFc" firstAttribute="leading" secondItem="Nbz-c9-vB5" secondAttribute="trailing" constant="20" id="ZfM-OO-tV5"/>
-                            <constraint firstItem="DVK-Pl-ikj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c2J-Hu-tde"/>
                             <constraint firstItem="DVK-Pl-ikj" firstAttribute="trailing" secondItem="a4T-95-IFc" secondAttribute="trailing" id="h7P-DU-BIk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nbz-c9-vB5" secondAttribute="bottom" constant="20" id="m0F-Sr-QLs"/>
                             <constraint firstItem="a4T-95-IFc" firstAttribute="top" secondItem="DVK-Pl-ikj" secondAttribute="bottom" constant="30" id="zXw-Dx-gkV"/>
                             <constraint firstItem="DVK-Pl-ikj" firstAttribute="leading" secondItem="Nbz-c9-vB5" secondAttribute="leading" id="zZN-pO-euX"/>
                         </constraints>

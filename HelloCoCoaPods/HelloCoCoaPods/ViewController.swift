@@ -8,8 +8,42 @@
 
 import UIKit
 import FirebaseDatabase
+import FBSDKLoginKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
+    @IBAction func fbsaveAction(_ sender: AnyObject) {
+        guard let current = FBSDKAccessToken.current() else{
+            print("get access token error")
+            return
+        }
+        
+        let accessToken = current.tokenString
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: accessToken!)
+        FIRAuth.auth()?.signIn(with: credential, completion: {
+            (user,error) in
+            let rootRef = FIRDatabase.database().reference()
+            let userRef = rootRef.child("users")
+            let userFBTom = ["name":"Tom", "age":"15"]
+            let tomRef = userRef.child( user!.uid )
+            tomRef.setValue(userFBTom)
+        })
+    }
+    
+    @IBAction func facebookAction(_ sender: AnyObject) {
+        guard let current = FBSDKAccessToken.current() else{
+            print("get access token error")
+            return
+        }
+        let accessToken = current.tokenString
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: accessToken!)
+        FIRAuth.auth()?.signIn(with: credential, completion: {
+            (user,error) in
+            print("Error: \(error?.localizedDescription)")
+            print("Uid: \(user?.uid)")
+            print("Display name: \(user?.displayName)")
+        })
+    }
 
     @IBOutlet weak var myImage: UIImageView!
     
@@ -24,6 +58,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let loginButton = FBSDKLoginButton.init()
+        loginButton.center = self.view.center
+        self.view.addSubview(loginButton)
     }
     
     func saveData(){

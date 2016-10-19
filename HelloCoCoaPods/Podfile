@@ -6,7 +6,11 @@ target 'HelloCoCoaPods' do
   use_frameworks!
 
   # Pods for HelloCoCoaPods
+  pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKCoreKit'
 
   target 'HelloCoCoaPodsTests' do
     inherit! :search_paths
