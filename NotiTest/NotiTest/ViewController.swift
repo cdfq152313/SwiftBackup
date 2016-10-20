@@ -8,11 +8,24 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let setting = UIUserNotificationSettings(types:[.sound, .alert, .badge], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(setting)
+    }
+    @IBAction func localAction(_ sender: AnyObject) {
+        let localNoti = UILocalNotification()
+        let now = Date()
+        let notiDate = now.addingTimeInterval(10)
+        localNoti.fireDate = notiDate
+        localNoti.alertBody = "Oh my goodness. Oh my dame."
+        localNoti.soundName = UILocalNotificationDefaultSoundName
+        localNoti.applicationIconBadgeNumber = 1
+        UIApplication.shared.scheduleLocalNotification(localNoti)
     }
 
     override func didReceiveMemoryWarning() {
