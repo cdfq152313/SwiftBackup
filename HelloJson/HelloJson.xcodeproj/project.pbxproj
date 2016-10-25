@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00F8CCF1DB9CEC4004DD834 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F8CCE1DB9CEC4004DD834 /* Reachability.m */; };
 		B0C346671DB0CD6700DEA660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C346661DB0CD6700DEA660 /* AppDelegate.swift */; };
 		B0C346691DB0CD6700DEA660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C346681DB0CD6700DEA660 /* ViewController.swift */; };
 		B0C3466C1DB0CD6700DEA660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C3466A1DB0CD6700DEA660 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00F8CCC1DB9CEC3004DD834 /* HelloJson-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloJson-Bridging-Header.h"; sourceTree = "<group>"; };
+		B00F8CCD1DB9CEC4004DD834 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B00F8CCE1DB9CEC4004DD834 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B0C346631DB0CD6700DEA660 /* HelloJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C346661DB0CD6700DEA660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C346681DB0CD6700DEA660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,11 +105,14 @@
 			children = (
 				B0C346661DB0CD6700DEA660 /* AppDelegate.swift */,
 				B0C346681DB0CD6700DEA660 /* ViewController.swift */,
+				B00F8CCD1DB9CEC4004DD834 /* Reachability.h */,
+				B00F8CCE1DB9CEC4004DD834 /* Reachability.m */,
 				B0C3466A1DB0CD6700DEA660 /* Main.storyboard */,
 				B0C3466D1DB0CD6700DEA660 /* Assets.xcassets */,
 				B0C3466F1DB0CD6700DEA660 /* LaunchScreen.storyboard */,
 				B0C346721DB0CD6700DEA660 /* Info.plist */,
 				B0C346941DB0D2D900DEA660 /* Person.swift */,
+				B00F8CCC1DB9CEC3004DD834 /* HelloJson-Bridging-Header.h */,
 			);
 			path = HelloJson;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				TargetAttributes = {
 					B0C346621DB0CD6700DEA660 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B0C346761DB0CD6700DEA660 = {
@@ -264,6 +272,7 @@
 			files = (
 				B0C346951DB0D2D900DEA660 /* Person.swift in Sources */,
 				B0C346691DB0CD6700DEA660 /* ViewController.swift in Sources */,
+				B00F8CCF1DB9CEC4004DD834 /* Reachability.m in Sources */,
 				B0C346671DB0CD6700DEA660 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HelloJson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloJson/HelloJson-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,10 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HelloJson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.addweup.HelloJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloJson/HelloJson-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -509,6 +523,7 @@
 				B0C3468D1DB0CD6700DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C3468E1DB0CD6700DEA660 /* Build configuration list for PBXNativeTarget "HelloJsonTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +532,7 @@
 				B0C346901DB0CD6700DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C346911DB0CD6700DEA660 /* Build configuration list for PBXNativeTarget "HelloJsonUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +541,7 @@
 				B0C346931DB0CD6700DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

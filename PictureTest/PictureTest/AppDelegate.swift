@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NotiTest
+//  PictureTest
 //
-//  Created by denny on 10/19/16.
+//  Created by denny on 10/24/16.
 //  Copyright © 2016 denny. All rights reserved.
 //
 
@@ -16,23 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let setting = UIUserNotificationSettings(types:[.sound, .alert, .badge], categories: nil)
-        UIApplication.shared.registerUserNotificationSettings(setting)
-        UIApplication.shared.registerForRemoteNotifications()
-        
         return true
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print("Token: \(deviceToken)")
-        
-        let apnsToken = String(format: "%@", deviceToken as CVarArg) as String
-        print("aspnsToken: \(apnsToken)")
-        
-        var tokenString = apnsToken.trimmingCharacters(in: CharacterSet(charactersIn: "<>"))
-        tokenString = tokenString.replacingOccurrences(of: " ", with: "")
-        print("tokenString: \(tokenString)")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
