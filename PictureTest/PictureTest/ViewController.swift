@@ -28,8 +28,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     func loadImage(_ imgURL:URL){
-        print(imgURL.absoluteString)
-        let image = UIImage(contentsOfFile: imgURL.absoluteString)
+        print(imgURL.path)
+        let image = UIImage(contentsOfFile: imgURL.path)
         if image != nil{
             imageView.image = image
         }

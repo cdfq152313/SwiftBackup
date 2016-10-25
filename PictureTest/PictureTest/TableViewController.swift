@@ -12,7 +12,7 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
 
     var imgArray:[String] = [String]()
     
-    let imgDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("myImage")
+    let imgDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     let recordPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("myRecord.txt")
     
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
         // fakeAddImage()
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         print("info \(info)")
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         // self.imageView.image = image as? UIImage
