@@ -43,5 +43,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Please give me your camera QQ</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>test</string>
 </dict>
 </plist>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V3o-Dd-I71">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V3o-Dd-I71">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,26 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmL-eT-8u7">
-                                <frame key="frameInset" minX="164" minY="573" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Kh-f0-gor"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c34-Au-o6c">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="239" id="1FL-LX-gK1"/>
-                                    <constraint firstAttribute="height" constant="229" id="olc-OA-szY"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c34-Au-o6c"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RmL-eT-8u7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LG8-1F-hbd"/>
-                            <constraint firstItem="c34-Au-o6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YAL-Lh-gZ4"/>
-                            <constraint firstItem="RmL-eT-8u7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ya3-Y6-0J7"/>
-                            <constraint firstItem="c34-Au-o6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYj-ku-n4W"/>
+                            <constraint firstItem="c34-Au-o6c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JMk-ZA-sv5"/>
+                            <constraint firstItem="c34-Au-o6c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P4G-Xl-8LN"/>
+                            <constraint firstAttribute="trailing" secondItem="c34-Au-o6c" secondAttribute="trailing" id="T1L-HZ-wLp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c34-Au-o6c" secondAttribute="bottom" id="tgC-d1-UeS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -46,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="40.929535232383813"/>
+            <point key="canvasLocation" x="2525.5999999999999" y="61.619190404797607"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="kWp-Gh-roj">
@@ -61,9 +48,12 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tJO-Sm-yBY" id="0q3-vy-Aa6">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JmL-yQ-K1z"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

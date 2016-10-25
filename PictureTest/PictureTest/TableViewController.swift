@@ -12,6 +12,9 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
 
     var imgArray:[String] = [String]()
     
+    let imgDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("myImage")
+    let recordPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("myRecord.txt")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,25 +37,41 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
     // MARK: - Table view data source
 
     @IBAction func addImage(_ sender: AnyObject) {
-        //        let imagePicker = UIImagePickerController()
-        //        imagePicker.sourceType = .camera
-        //        imagePicker.delegate = self
-        //        self.present(imagePicker, animated: true, completion: nil)
-        loadImageArray()
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .camera
+        imagePicker.delegate = self
+        self.present(imagePicker, animated: true, completion: nil)
         // fakeAddImage()
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         print("info \(info)")
-        // let image = info[UIImagePickerControllerOriginalImage]
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         // self.imageView.image = image as? UIImage
-        // self.dismiss(animated:true, completion: nil)
+        if image != nil{
+            saveImage(image: image!)
+        }
+        self.dismiss(animated:true, completion: nil)
+    }
+    
+    func saveImage(image:UIImage){
+        let imageName = "\(Date.timeIntervalSinceReferenceDate).jpg"
+        let imagePath = imgDir.appendingPathComponent(imageName)
+        
+        if let dataToSave = UIImageJPEGRepresentation(image, 1.0){
+            do {
+                try dataToSave.write(to: imagePath)
+                recordSaveImage(imgName: imageName)
+            }
+            catch{
+                print("Save data Error")
+            }
+        }
     }
     
     func fakeAddImage(){
         let imageName = String(format:"%f", Date.timeIntervalSinceReferenceDate) + ".jpg"
-        var imagePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        imagePath.appendPathComponent(imageName)
+        let imagePath = imgDir.appendingPathComponent(imageName)
         let text = "test"
         do {
             try text.write(to: imagePath, atomically: true, encoding: .utf8)
@@ -64,36 +83,27 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
     }
     
     func recordSaveImage(imgName:String){
-        let recordFile = "myRecord.txt"
-        var fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        fileURL.appendPathComponent(recordFile)
         
-        if var loadArray = NSArray(contentsOf: fileURL) as? [String]{
+        if var loadArray = NSArray(contentsOf: recordPath) as? [String]{
             loadArray.append(imgName)
             let arrayToSave = NSArray(array: loadArray)
-            arrayToSave.write(to: fileURL, atomically: true)
+            arrayToSave.write(to: recordPath, atomically: true)
             print(arrayToSave)
         }
         else{
             let array = [imgName]
             let arrayToSave = NSArray(array: array)
-            arrayToSave.write(to: fileURL, atomically: true)
+            arrayToSave.write(to: recordPath, atomically: true)
             print(arrayToSave)
         }
     }
     
     func loadImageArray(){
-        
-        let recordFile = "myRecord.txt"
-        let dirURl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        
-        let fileURL = dirURl.appendingPathComponent(recordFile)
-
-        if let loadArray = NSArray(contentsOf: fileURL) as? [String]{
+        if let loadArray = NSArray(contentsOf: recordPath) as? [String]{
             imgArray = loadArray
             print(imgArray)
+            self.tableView.reloadData()
         }
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -152,14 +162,18 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let indexPath = tableView.indexPathForSelectedRow{
+            let controller = segue.destination as! ViewController
+            controller.imgURL = imgDir.appendingPathComponent(imgArray[indexPath.row])
+        }
     }
-    */
+ 
 
 }
