@@ -70,7 +70,7 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
     }
     
     func fakeAddImage(){
-        let imageName = String(format:"%f", Date.timeIntervalSinceReferenceDate) + ".jpg"
+        let imageName = "\(Date.timeIntervalSinceReferenceDate).jpg"
         let imagePath = imgDir.appendingPathComponent(imageName)
         let text = "test"
         do {
@@ -78,7 +78,7 @@ class TableViewController: UITableViewController, UIImagePickerControllerDelegat
             recordSaveImage(imgName: imageName)
         }
         catch{
-            print("Error")
+            print("Save data Error")
         }
     }
     

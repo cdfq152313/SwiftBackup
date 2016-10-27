@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let setting = UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(setting)
     }
     @IBAction func localAction(_ sender: AnyObject) {
         let localNoti = UILocalNotification()
@@ -25,6 +26,10 @@ class ViewController: UIViewController {
         localNoti.soundName = UILocalNotificationDefaultSoundName
         localNoti.applicationIconBadgeNumber = 1
         UIApplication.shared.scheduleLocalNotification(localNoti)
+    }
+    
+    func printToken(){
+        
     }
 
     override func didReceiveMemoryWarning() {
