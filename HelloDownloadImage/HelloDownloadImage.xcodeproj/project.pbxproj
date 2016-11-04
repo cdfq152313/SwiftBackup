@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D32E2D72563257585A86C2A /* Pods_HelloDownloadImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1C3CFD651DADC540F9535 /* Pods_HelloDownloadImage.framework */; };
+		48BD939A74C831DEA11A063E /* Pods_HelloDownloadImageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B4A31896867F47AA7360C2 /* Pods_HelloDownloadImageUITests.framework */; };
+		7463BACB2C3CE2352CDCC318 /* Pods_HelloDownloadImageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F733513045269C520A63FA36 /* Pods_HelloDownloadImageTests.framework */; };
 		B0C345F11DB0AEC200DEA660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C345F01DB0AEC200DEA660 /* AppDelegate.swift */; };
 		B0C345F31DB0AEC200DEA660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C345F21DB0AEC200DEA660 /* ViewController.swift */; };
 		B0C345F61DB0AEC200DEA660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C345F41DB0AEC200DEA660 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		B0C346061DB0AEC200DEA660 /* HelloDownloadImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C346051DB0AEC200DEA660 /* HelloDownloadImageTests.swift */; };
 		B0C346111DB0AEC200DEA660 /* HelloDownloadImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C346101DB0AEC200DEA660 /* HelloDownloadImageUITests.swift */; };
 		B0C346591DB0BAB100DEA660 /* HelloDownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C346581DB0BAB100DEA660 /* HelloDownloadImageView.swift */; };
+		B0FD8C2A1DCB25700072D5D2 /* AWVjqMA.gif in Resources */ = {isa = PBXBuildFile; fileRef = B0FD8C291DCB25700072D5D2 /* AWVjqMA.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BCF03DAE085B018CBB96581 /* Pods-HelloDownloadImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImageTests/Pods-HelloDownloadImageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35EDC5BC7A8A71A8DBCC6A23 /* Pods-HelloDownloadImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImage/Pods-HelloDownloadImage.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC46952254F588DA80828D9 /* Pods-HelloDownloadImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImageUITests/Pods-HelloDownloadImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5786DC35DDA71040D3E48325 /* Pods-HelloDownloadImageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImageUITests/Pods-HelloDownloadImageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69C1C3CFD651DADC540F9535 /* Pods_HelloDownloadImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloDownloadImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73801BA1BAB8233AB8965084 /* Pods-HelloDownloadImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImageTests/Pods-HelloDownloadImageTests.release.xcconfig"; sourceTree = "<group>"; };
+		A984E67F6B8CEC83E3532A26 /* Pods-HelloDownloadImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloDownloadImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloDownloadImage/Pods-HelloDownloadImage.release.xcconfig"; sourceTree = "<group>"; };
 		B0C345ED1DB0AEC200DEA660 /* HelloDownloadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloDownloadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C345F01DB0AEC200DEA660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C345F21DB0AEC200DEA660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		B0C346101DB0AEC200DEA660 /* HelloDownloadImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDownloadImageUITests.swift; sourceTree = "<group>"; };
 		B0C346121DB0AEC200DEA660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C346581DB0BAB100DEA660 /* HelloDownloadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloDownloadImageView.swift; sourceTree = "<group>"; };
+		B0FD8C291DCB25700072D5D2 /* AWVjqMA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AWVjqMA.gif; sourceTree = "<group>"; };
+		C3B4A31896867F47AA7360C2 /* Pods_HelloDownloadImageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloDownloadImageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F733513045269C520A63FA36 /* Pods_HelloDownloadImageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloDownloadImageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D32E2D72563257585A86C2A /* Pods_HelloDownloadImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7463BACB2C3CE2352CDCC318 /* Pods_HelloDownloadImageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BD939A74C831DEA11A063E /* Pods_HelloDownloadImageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345645519FBC3A600ECA1DDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35EDC5BC7A8A71A8DBCC6A23 /* Pods-HelloDownloadImage.debug.xcconfig */,
+				A984E67F6B8CEC83E3532A26 /* Pods-HelloDownloadImage.release.xcconfig */,
+				2BCF03DAE085B018CBB96581 /* Pods-HelloDownloadImageTests.debug.xcconfig */,
+				73801BA1BAB8233AB8965084 /* Pods-HelloDownloadImageTests.release.xcconfig */,
+				3DC46952254F588DA80828D9 /* Pods-HelloDownloadImageUITests.debug.xcconfig */,
+				5786DC35DDA71040D3E48325 /* Pods-HelloDownloadImageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0C345E41DB0AEC100DEA660 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				B0C346041DB0AEC200DEA660 /* HelloDownloadImageTests */,
 				B0C3460F1DB0AEC200DEA660 /* HelloDownloadImageUITests */,
 				B0C345EE1DB0AEC200DEA660 /* Products */,
+				345645519FBC3A600ECA1DDC /* Pods */,
+				CABA76D5CA8BAAB079F608E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +131,7 @@
 		B0C345EF1DB0AEC200DEA660 /* HelloDownloadImage */ = {
 			isa = PBXGroup;
 			children = (
+				B0FD8C291DCB25700072D5D2 /* AWVjqMA.gif */,
 				B0C345F01DB0AEC200DEA660 /* AppDelegate.swift */,
 				B0C345F21DB0AEC200DEA660 /* ViewController.swift */,
 				B0C345F41DB0AEC200DEA660 /* Main.storyboard */,
@@ -128,6 +161,16 @@
 			path = HelloDownloadImageUITests;
 			sourceTree = "<group>";
 		};
+		CABA76D5CA8BAAB079F608E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69C1C3CFD651DADC540F9535 /* Pods_HelloDownloadImage.framework */,
+				F733513045269C520A63FA36 /* Pods_HelloDownloadImageTests.framework */,
+				C3B4A31896867F47AA7360C2 /* Pods_HelloDownloadImageUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C346151DB0AEC200DEA660 /* Build configuration list for PBXNativeTarget "HelloDownloadImage" */;
 			buildPhases = (
+				EB487EEE9A08067D34CC13DB /* [CP] Check Pods Manifest.lock */,
 				B0C345E91DB0AEC100DEA660 /* Sources */,
 				B0C345EA1DB0AEC100DEA660 /* Frameworks */,
 				B0C345EB1DB0AEC100DEA660 /* Resources */,
+				DE9CE85DEFFD8417E17D5ECF /* [CP] Embed Pods Frameworks */,
+				2FB2BC28F4A2C5EA97E914E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C346181DB0AEC200DEA660 /* Build configuration list for PBXNativeTarget "HelloDownloadImageTests" */;
 			buildPhases = (
+				B9EE126F7C8838DB8A2B983B /* [CP] Check Pods Manifest.lock */,
 				B0C345FD1DB0AEC200DEA660 /* Sources */,
 				B0C345FE1DB0AEC200DEA660 /* Frameworks */,
 				B0C345FF1DB0AEC200DEA660 /* Resources */,
+				3B87ECDEDA3884A886815EA7 /* [CP] Embed Pods Frameworks */,
+				E0C5B8D702155FA05923251C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C3461B1DB0AEC200DEA660 /* Build configuration list for PBXNativeTarget "HelloDownloadImageUITests" */;
 			buildPhases = (
+				66F24DFF7C2BBEC868E3DFB5 /* [CP] Check Pods Manifest.lock */,
 				B0C346081DB0AEC200DEA660 /* Sources */,
 				B0C346091DB0AEC200DEA660 /* Frameworks */,
 				B0C3460A1DB0AEC200DEA660 /* Resources */,
+				1E961353A8161973E2457DFE /* [CP] Embed Pods Frameworks */,
+				902710806A4070501AF29B02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +289,7 @@
 			files = (
 				B0C345FB1DB0AEC200DEA660 /* LaunchScreen.storyboard in Resources */,
 				B0C345F81DB0AEC200DEA660 /* Assets.xcassets in Resources */,
+				B0FD8C2A1DCB25700072D5D2 /* AWVjqMA.gif in Resources */,
 				B0C345F61DB0AEC200DEA660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +309,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E961353A8161973E2457DFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImageUITests/Pods-HelloDownloadImageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FB2BC28F4A2C5EA97E914E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImage/Pods-HelloDownloadImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B87ECDEDA3884A886815EA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImageTests/Pods-HelloDownloadImageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F24DFF7C2BBEC868E3DFB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		902710806A4070501AF29B02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImageUITests/Pods-HelloDownloadImageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EE126F7C8838DB8A2B983B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9CE85DEFFD8417E17D5ECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImage/Pods-HelloDownloadImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C5B8D702155FA05923251C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloDownloadImageTests/Pods-HelloDownloadImageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB487EEE9A08067D34CC13DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0C345E91DB0AEC100DEA660 /* Sources */ = {
@@ -414,6 +605,7 @@
 		};
 		B0C346161DB0AEC200DEA660 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EDC5BC7A8A71A8DBCC6A23 /* Pods-HelloDownloadImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloDownloadImage/Info.plist;
@@ -426,6 +618,7 @@
 		};
 		B0C346171DB0AEC200DEA660 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A984E67F6B8CEC83E3532A26 /* Pods-HelloDownloadImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloDownloadImage/Info.plist;
@@ -438,6 +631,7 @@
 		};
 		B0C346191DB0AEC200DEA660 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCF03DAE085B018CBB96581 /* Pods-HelloDownloadImageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +646,7 @@
 		};
 		B0C3461A1DB0AEC200DEA660 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73801BA1BAB8233AB8965084 /* Pods-HelloDownloadImageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +661,7 @@
 		};
 		B0C3461C1DB0AEC200DEA660 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC46952254F588DA80828D9 /* Pods-HelloDownloadImageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HelloDownloadImageUITests/Info.plist;
@@ -479,6 +675,7 @@
 		};
 		B0C3461D1DB0AEC200DEA660 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5786DC35DDA71040D3E48325 /* Pods-HelloDownloadImageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HelloDownloadImageUITests/Info.plist;
@@ -509,6 +706,7 @@
 				B0C346171DB0AEC200DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C346181DB0AEC200DEA660 /* Build configuration list for PBXNativeTarget "HelloDownloadImageTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +715,7 @@
 				B0C3461A1DB0AEC200DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C3461B1DB0AEC200DEA660 /* Build configuration list for PBXNativeTarget "HelloDownloadImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +724,7 @@
 				B0C3461D1DB0AEC200DEA660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

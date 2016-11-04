@@ -1,0 +1,6 @@
+framework module Pods_HelloJsonTests {
+  umbrella header "Pods-HelloJsonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

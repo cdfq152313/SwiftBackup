@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
@@ -15,16 +16,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        useSDWebImage()
+    }
+    
+    func useSDWebImage(){
+        if let url = URL(string: "http://i.imgur.com/AWVjqMA.gif"){
+            myImage.sd_setImage(with: url)
+        }
+    }
+    
+    func useDownloadImageView(){
         if let url = URL(string: "http://pics.ctitv.com/wpimg/2016/10/210.jpg"){
             let area = CGRect(x:0, y:40, width:300, height:300)
             let imageView = DownloadImageView(frame: area)
             imageView.loadImagewithURL(url: url)
             self.view.addSubview(imageView)
         }
-        downloadUseSession()
-        //DispatchQueue.global().async {
-        //    self.download()
-        //}
     }
     
     func downloadUseSession(){
