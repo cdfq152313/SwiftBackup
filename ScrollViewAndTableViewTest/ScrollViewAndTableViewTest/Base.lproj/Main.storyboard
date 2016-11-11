@@ -23,9 +23,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-OI-eJ4">
-                                <rect key="frame" x="16" y="158.5" width="343" height="350"/>
+                                <rect key="frame" x="16" y="159" width="343" height="350"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anima" translatesAutoresizingMaskIntoConstraints="NO" id="tRZ-nA-Nng">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic1" translatesAutoresizingMaskIntoConstraints="NO" id="tRZ-nA-Nng">
                                         <rect key="frame" x="20" y="20" width="303" height="137"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="137" id="SvO-z9-HVo"/>
@@ -33,13 +33,13 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioc-4C-y3p">
                                         <rect key="frame" x="20" y="177" width="303" height="264"/>
-                                        <mutableString key="text">Mexican Touchdown, Mexican Touchdown! Mexican! Mexican!
+                                        <string key="text">Mexican Touchdown, Mexican Touchdown! Mexican! Mexican!
 Went to the space and got into trouble
 Do do do do do do
 Plum and Danny made a Mexican Touchdown!  Mexican Touchdown, Mexican Touchdown! Mexican! Mexican!
 Went to the space and got into trouble
 Do do do do do do
-Plum and Danny made a Mexican Touchdown!</mutableString>
+Plum and Danny made a Mexican Touchdown!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -57,12 +57,45 @@ Plum and Danny made a Mexican Touchdown!</mutableString>
                                     <constraint firstAttribute="trailing" secondItem="tRZ-nA-Nng" secondAttribute="trailing" constant="20" id="hlp-LW-9nm"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAc-aV-hux">
+                                <rect key="frame" x="16" y="563" width="85" height="30"/>
+                                <state key="normal" title="ScrollView 2"/>
+                                <connections>
+                                    <segue destination="zOo-89-4L3" kind="show" id="H3K-dU-4mD"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nox-y9-6cX">
+                                <rect key="frame" x="141" y="563" width="81" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="taa-nh-0Eg">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Ww-xD4">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-2p-V42">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                                        <state key="normal" title="ScrollView3"/>
+                                                        <connections>
+                                                            <segue destination="kYp-lT-MrI" kind="show" id="NXM-Ca-Dg3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z3z-OI-eJ4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4Iw-Mw-ZYo"/>
+                            <constraint firstItem="CAc-aV-hux" firstAttribute="top" secondItem="z3z-OI-eJ4" secondAttribute="bottom" constant="54.5" id="8Oc-9D-okY"/>
+                            <constraint firstItem="CAc-aV-hux" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RCr-Ut-YwU"/>
                             <constraint firstItem="z3z-OI-eJ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cao-jD-CeM"/>
                             <constraint firstItem="z3z-OI-eJ4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eNB-Yk-7EK"/>
+                            <constraint firstItem="nox-y9-6cX" firstAttribute="leading" secondItem="CAc-aV-hux" secondAttribute="trailing" constant="40" id="qwG-d0-1kN"/>
+                            <constraint firstItem="nox-y9-6cX" firstAttribute="top" secondItem="z3z-OI-eJ4" secondAttribute="bottom" constant="54" id="suV-6g-vxm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ScrollView" id="piF-eH-hwQ">
@@ -77,6 +110,90 @@ Plum and Danny made a Mexican Touchdown!</mutableString>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
+        <!--View Controller2-->
+        <scene sceneID="Uln-Bg-MIh">
+            <objects>
+                <viewController id="zOo-89-4L3" customClass="ViewController2" customModule="ScrollViewAndTableViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EmP-qG-oeN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Grh-Id-nLq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9K-bm-W6y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="iKT-Um-vCn">
+                                <rect key="frame" x="16" y="114" width="343" height="553"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9h-mo-HgP">
+                                <rect key="frame" x="16" y="72" width="38" height="30"/>
+                                <state key="normal" title="move"/>
+                                <connections>
+                                    <action selector="myAction:" destination="zOo-89-4L3" eventType="touchUpInside" id="J52-LE-Hr8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLG-QV-OFz">
+                                <rect key="frame" x="74" y="72" width="40" height="30"/>
+                                <state key="normal" title="Zoom"/>
+                                <connections>
+                                    <action selector="zoomAction:" destination="zOo-89-4L3" eventType="touchUpInside" id="dgE-wo-kNj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A9h-mo-HgP" firstAttribute="top" secondItem="EmP-qG-oeN" secondAttribute="bottom" constant="8" id="7zH-ms-PDa"/>
+                            <constraint firstItem="iKT-Um-vCn" firstAttribute="leading" secondItem="e9K-bm-W6y" secondAttribute="leadingMargin" id="90b-1P-eig"/>
+                            <constraint firstItem="iKT-Um-vCn" firstAttribute="top" secondItem="EmP-qG-oeN" secondAttribute="bottom" constant="50" id="LuT-O0-HQJ"/>
+                            <constraint firstItem="mLG-QV-OFz" firstAttribute="top" secondItem="EmP-qG-oeN" secondAttribute="bottom" constant="8" id="YZt-ak-jUX"/>
+                            <constraint firstItem="Grh-Id-nLq" firstAttribute="top" secondItem="iKT-Um-vCn" secondAttribute="bottom" id="ZRP-3i-7NT"/>
+                            <constraint firstItem="A9h-mo-HgP" firstAttribute="leading" secondItem="e9K-bm-W6y" secondAttribute="leadingMargin" id="cdf-Jx-vIR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iKT-Um-vCn" secondAttribute="trailing" id="lQZ-3d-RMb"/>
+                            <constraint firstItem="mLG-QV-OFz" firstAttribute="leading" secondItem="A9h-mo-HgP" secondAttribute="trailing" constant="20" id="oe2-ST-pwe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="iKT-Um-vCn" id="JaV-PW-Zy9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpI-TF-lYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="832.53373313343332"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="GvR-qQ-ktA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="kYp-lT-MrI" customClass="ViewController3" customModule="ScrollViewAndTableViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IaS-Ld-DJg"/>
+                        <viewControllerLayoutGuide type="bottom" id="DAt-kc-oQK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="reX-vJ-hmM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZ7-zb-3RG">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="88K-3y-2PA"/>
+                                    <constraint firstAttribute="width" constant="300" id="8Eu-25-F4y"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JZ7-zb-3RG" firstAttribute="centerY" secondItem="reX-vJ-hmM" secondAttribute="centerY" id="5R3-S6-C6g"/>
+                            <constraint firstItem="JZ7-zb-3RG" firstAttribute="centerX" secondItem="reX-vJ-hmM" secondAttribute="centerX" id="VNn-cJ-d8A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="JZ7-zb-3RG" id="PiS-02-5qt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldy-G4-GXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="832.53373313343332"/>
+        </scene>
         <!--TableView-->
         <scene sceneID="77r-st-0ad">
             <objects>
@@ -90,7 +207,7 @@ Plum and Danny made a Mexican Touchdown!</mutableString>
                                 <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="69Z-NV-5pP" id="bkA-ni-mFT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-D5-NWU">
@@ -151,6 +268,6 @@ Plum and Danny made a Mexican Touchdown!</mutableString>
         </scene>
     </scenes>
     <resources>
-        <image name="anima" width="703" height="679"/>
+        <image name="pic1" width="703" height="679"/>
     </resources>
 </document>
